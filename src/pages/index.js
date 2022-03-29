@@ -59,6 +59,7 @@ export default function Home() {
     try {
       const res = await fetch(`/api/student/${id}`, { method: "DELETE" });
       const parsedData = await res.json();
+      router.reload();
       return parsedData;
     } catch (error) {
       console.log(error.message);
