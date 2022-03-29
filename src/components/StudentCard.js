@@ -22,14 +22,14 @@ const StudentCard = ({ students, editStudent, deleteStudent }) => {
           <td className="py-4 pr-6 space-x-4 text-sm xl:pr-4 whitespace-nowrap">
             <button
               type="button"
-              className="text-indigo-500 font-medium"
+              className="text-indigo-500 font-medium hover:underline"
               onClick={() => editStudent(student._id)}
             >
               Edit
             </button>
             <button
               type="button"
-              className="text-indigo-500 font-medium"
+              className="text-indigo-500 font-medium hover:underline"
               onClick={() => deleteStudent(student._id)}
             >
               Delete
