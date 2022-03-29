@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply inline-block px-3 py-2 text-sm text-white bg-indigo-600 rounded hover:bg-indigo-700 focus:ring focus:ring-indigo-600 focus:ring-offset-1;
+  }
+
+  .btn-disabled {
+    @apply disabled:opacity-70 pointer-events-none;
+  }
+  .label {
+    @apply block mb-1 text-sm text-gray-600;
+  }
+  .form-control {
+    @apply rounded w-full py-1.5 pl-2 transition duration-200 ease-out bg-gray-100 border border-gray-400 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:ring-offset-0;
+  }
+  .error {
+    @apply border-b border-red-500 focus:border-red-500 focus:ring-red-500;
+  }
+  .error-message {
+    @apply absolute -bottom-[19px] left-0 text-sm text-red-500 pointer-events-none select-none;
+  }
+  .table-header {
+    @apply pt-3 pb-2 text-xs font-medium tracking-wider text-left text-gray-600 border-b border-gray-300 whitespace-nowrap bg-gray-50;
+  }
+}
